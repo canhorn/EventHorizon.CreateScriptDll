@@ -21,8 +21,8 @@ namespace CreateScriptDll
 
                     public class Script
                     {
-                        // Noticed the dynamic usage so we dont have to know exactly what is on the arguments.
-                        // And we are able to access any of the argument properties, or get an exception is if not found.
+                        // Noticed the dynamic usage so we don't have to know exactly what is on the arguments.
+                        // And we are able to access any of the argument properties, or get an exception if not found.
                         public ScriptResult Method(dynamic arg1)
                         {
                             return new ScriptResult { Name = $""({arg1.ArgName}) Script Result!"" };
